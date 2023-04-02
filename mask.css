@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
+
+body {
+  font-family: 'Inconsolata', sans-serif;
+  color: white;
+  background: var(--primary-color);
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+:root{
+	--primary-color: #c2aaba;
+	 --secondary-color: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+	--third-color: rgba(255,255,255,0.8);
+	--credit-color: rgba(255,255,255,0.4);
+	--inactive-border-color: rgba(255,255,255,0.2);
+  --inactive-background-color: rgba(255,255,255,0.2);
+	--active-background: white;
+}
+
+.dark-theme{
+	--primary-color: #181818;
+	/* --secondary-color: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%); */
+	--secondary-color: linear-gradient(to right, #cf6cc9 0%,  #ee609c 100%);
+	--third-color: rgba(255,255,255,0.8);
+	--credit-color: rgba(255,255,255,0.4);
+	--inactive-border-color: rgba(255,255,255,0.2);
+  --inactive-background-color: rgba(255,255,255,0.2);
+	--active-background: white;
+}
+#icon {
+	position: absolute;
+	cursor: pointer;
+	top: 10px;
+	right: 20px;
+	width: 30px;
+}
+/* #icon img {
+	position: absolute;
+	top: 0px;
+	right: 20px;
+	width: 30px;
+} */
+.gradient {
+	font-family: 'Inconsolata', sans-serif;
+	font-size: 20px;
+	background-image: var(--secondary-color);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+
+}
+
+.container{
+	text-align: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding-top: 45px;
+	padding-bottom: 20px;
+}
+
+.info{
+	margin: 0 auto;
+	max-width: 500px;
+}
+.h1{
+	text-align: center;
+	color: var(--third-color);
+}
+
+.credit{
+	text-align: center;
+	color: var(--credit-color);
+	line-height: 2em;
+}
+
+.a{
+	color: var(--third-color);
+}
+
+.row{
+	padding-top: 5px;
+}
+
+.inactive {
+	pointer-events: none;
+	border-color: var(--inactive-border-color);
+	background-color: var(--inactive-background-color);
+}
+
+
+
+.operation{
+	cursor: pointer;
+}
+.selected{
+	text-decoration: underline;
+}
+
+.result-circle{
+	cursor: default;
+
+}
+
+.label{
+	display: inline-block;
+}
+
+.active-circle{
+	background: var(--active-background);
+}
+.circle{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 100px;
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+

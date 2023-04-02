@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="mask.css" />
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="mask.js"></script>
+    <link rel="icon" type="image/x-icon" sizes="196x196" href="images/favicon.png">
+  </head>
+  <body>
+    <!-- Light mode and dark mode -->
+    <!-- Start of div -->
+    <div class="container">
+      <div>
+        <nav class="header">
+          <img src="images/dark-mode.png" id="icon">
+        </nav>
+     </div>
+      <h1 class="h1">Bitwise Operations</h1>
+      <div class="gradient">What are bits?</div>
+      <div class="info">
+        <p>Bits are the smallest increment of data on a computer. They are represented as a 0 or 1. When you group 8 bits together, you get one byte!</p>
+      </div>
+      <div class="gradient">What is a bitwise operator?</div>
+      <div class="info">
+        <p>
+          In digital computer programming, a bitwise operator is used to perform bitwise operations on one or more bit patterns at the level of their individual bits.
+        </p>
+        <p>
+        It is a fast, simple action directly supported by the processor, and is used to manipulate values for comparisons and calculations.
+        </p>
+      </div>
+      <div class="gradient">Let's see how they work!</div>
+      <div class="info">Let's have a look at four bitwise operators: AND, OR, NOT, XOR.</div>
+        <div class="row">
+          <p class="label gradient">Input 1:</p>
+          <div class="byte1">
+            <div class="circle" bit="0" bit-value="false"></div>
+            <div class="active-circle circle" bit="1" bit-value="true"></div>
+            <div class="active-circle circle" bit="2" bit-value="true"></div>
+            <div class="active-circle circle" bit="3" bit-value="true"></div>
+            <div class="circle" bit="4" bit-value="false"></div>
+            <div class="circle" bit="5" bit-value="false"></div>
+            <div class="active-circle circle" bit="6" bit-value="true"></div>
+            <div class="active-circle circle" bit="7" bit-value="true"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <p class="label gradient">Input 2:</p>
+          <div class="byte2">
+            <div class="circle" bit="0" bit-value="false"></div>
+            <div class="active-circle circle" bit="1" bit-value="true"></div>
+            <div class="circle" bit="2" bit-value="false"></div>
+            <div class="circle" bit="3" bit-value="false"></div>
+            <div class="active-circle circle" bit="4" bit-value="true"></div>
+            <div class="circle" bit="5" bit-value="false"></div>
+            <div class="circle" bit="6" bit-value="false"></div>
+            <div class="circle" bit="7" bit-value="false"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <p class="label gradient">Result:</p>
+          <div class="result">
+            <div class="circle" bit="0" bit-value="false"></div>
+            <div class="circle" bit="1" bit-value="false"></div>
+            <div class="circle" bit="2" bit-value="false"></div>
+            <div class="circle" bit="3" bit-value="false"></div>
+            <div class="circle" bit="4" bit-value="false"></div>
+            <div class="circle" bit="5" bit-value="false"></div>
+            <div class="circle" bit="6" bit-value="false"></div>
+            <div class="circle" bit="7" bit-value="false"></div>
+          </div>
+          <div class="row">
+            <p class="label gradient">Operation:</p>
+            <div class="operations explaination">
+              <span class="operation and selected" explain-text="A bitwise AND takes two equal-length binary representations and performs the logical AND operation on each pair of the corresponding bits, by multiplying them. Thus, if both bits in the compared position are 1, the bit in the resulting binary representation is 1 (1 × 1 = 1); otherwise, the result is 0 (1 × 0 = 0 and 0 × 0 = 0).">AND</span>
+              <span class="operation or" explain-text="A bitwise OR takes two bit patterns of equal length and performs the logical inclusive OR operation on each pair of corresponding bits. The result in each position is 0 if both bits are 0, while otherwise the result is 1.">OR</span>
+              <span class="operation xor" explain-text="A bitwise XOR takes two bit patterns of equal length and performs the logical exclusive OR operation on each pair of corresponding bits. The result in each position is 1 if only the first bit is 1 or only the second bit is 1, but will be 0 if both are 0 or both are 1. In this we perform the comparison of two bits, being 1 if the two bits are different, and 0 if they are the same.">XOR</span>
+              <span class="operation not" explain-text="The bitwise NOT, or complement, is a unary operation that performs logical negation on each bit, forming the ones' complement of the given binary value. Bits that are 0 become 1, and those that are 1 become 0.">NOT</span>
+            </div>
+          </div>
+          <div class="row">
+            <p class="label gradient">Explanation:</p>
+            <div class="info"><span class="explanation"></span></div>
+          </div>
+        </div>
+        <p class="credit">By Akanksha Sood<br><a class="a" target="_blank" href="https://en.wikipedia.org/wiki/Bitwise_operation">Info source</a></p>
+        </div>
+    </div>
+  </body>
+</html>
+
