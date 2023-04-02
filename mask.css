@@ -43,7 +43,7 @@ body {
 .image {
 	cursor: pointer;
 	width: 30px; 
-	position: absolute;
+	position: center;
 }
 .gradient {
 	font-family: 'Inconsolata', sans-serif;
